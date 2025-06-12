@@ -90,8 +90,10 @@ header {
   border-radius: 12px;
   box-shadow: 0 0 8px black;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .info-box-text {
@@ -118,4 +120,38 @@ header {
 
 .info-box-button:hover {
   background-color: rgba(25, 25, 25, 0.397);;
+}
+
+.login-title {
+  position: relative;
+  top: -7.5%;
+}
+
+input {
+  height: 4vh;
+  width: 17.5vw;
+  background-color: rgba(22, 22, 22, 0.397);
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  margin: 1%;
+  position: relative;
+  bottom: 4%;
+  padding-left: 1%;
+}
+
+#login {
+  background-color: rgba(22, 22, 22, 0.397);
+  border-style: solid;
+  width: 50%;
+  height: 16%;
+  position: relative;
+  top: 10%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px black;
+}
+
+#login:hover {
+  background-color: rgba(25, 25, 25, 0.397);
+  cursor:pointer;
 }
