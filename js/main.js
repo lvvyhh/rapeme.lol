@@ -1,3 +1,7 @@
+if (location.hostname === 'www.rapeme.lol') {
+  location.href = location.href.replace('www.rapeme.lol', 'rapeme.lol');
+}
+
 const API_BASE = 'https://rapeme-lol-backend.onrender.com';
 
 document.getElementById('login').addEventListener('click', async () => {
