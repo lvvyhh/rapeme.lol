@@ -18,7 +18,8 @@ document.getElementById('login').addEventListener('click', async () => {
 
     const data = await response.json();
 
-    if (data.success) {
+    if (data.success && data.token) {
+      localStorage.setItem('token', data.token); // save token
       alert('You’re in!');
       setTimeout(() => {
         window.location.href = "profile.html";
