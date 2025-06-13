@@ -16,7 +16,9 @@ document.getElementById('login').addEventListener('click', async () => {
 
     if (data.success) {
       alert('You’re in!');
-      window.location.href = '/profile.html';
+      setTimeout(() => {
+        window.location.href = "profile.html";
+      }, 200);
     } else {
       alert(data.message);
     }
